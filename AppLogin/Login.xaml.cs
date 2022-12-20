@@ -29,7 +29,7 @@ namespace AppLogin
             }
             else
             {
-                DisplayAlert("ERROR", "Usuario o Contraseña incorrecta","gracias");
+                DisplayAlert("ERROR", "Usuario o Contraseña incorrecta","gracias mo");
             }
         }
     }
