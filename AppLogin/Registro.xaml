@@ -4,8 +4,13 @@
              x:Class="AppLogin.Registro">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Usuario conextado: " />
+            <Label Text="Usuario conectado: " />
             <Label Text="" x:Name="lblUsuario" FontSize="20" />
+            <Entry Placeholder="Nombre" x:Name="entNombre" Keyboard="Text"/>
+            <Entry Placeholder="Monto inicial" x:Name="entInicial" Keyboard="Numeric"/>
+            <Label Text="Pago Mensual" />
+            <Label Text="" x:Name="txtPago" />
+            <Button Text="Calcular" x:Name="btnCalcular" Clicked="btnCalcular_Clicked"/>
             <Button Text="Guardar" x:Name="btnGuardar" Clicked="btnGuardar_Clicked" />
         </StackLayout>
     </ContentPage.Content>

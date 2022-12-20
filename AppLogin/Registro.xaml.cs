@@ -22,5 +22,20 @@ namespace AppLogin
         {
            // await Navigation.PushAsync(new Resumen(lblUsuario.Text));
         }
+
+        private void btnCalcular_Clicked(object sender, EventArgs e)
+        {
+            double CostoCurso = 3000;
+            double ValorInicial =  double.Parse(entInicial.Text);
+            string Nombre = entNombre.Text;     
+            double resta = CostoCurso - ValorInicial;
+            double PagoMensual = (resta) / 5;
+            double Porcentaje = PagoMensual * 0.05;
+            double PorcentajeSuma = PagoMensual + Porcentaje;
+            double TotalPago = (PorcentajeSuma * 5) + ValorInicial;
+
+            txtPago.Text = Convert.ToString(PorcentajeSuma);
+
+        }
     }
 }
