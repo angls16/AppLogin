@@ -6,7 +6,7 @@
         <StackLayout>
 
             <Label TextColor="#3399ff" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" Text="Iniciar Sesión" FlexLayout.AlignSelf="Center"  FontSize="25" />
-            <Image Source="Imagen de WhatsApp 2022-12-20 a las 00.36.07.jpg"  />
+            <Image Source="imagen.jpg" HeightRequest="140" WidthRequest="140" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
             <!--<Entry x:Name="userNameEntry" ReturnType="Next" Placeholder="Email" FontSize="Medium" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand"  TextColor="Black" />-->
             <Entry Placeholder="Usuario" FontSize="Medium" TextColor="Black" x:Name="entUsuario" />
 
