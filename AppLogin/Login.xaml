@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLogin.Login">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image Source="" />
+            <Entry Placeholder="" x:Name="entUsuario" Keyboard="Text"/>
+            <Entry Placeholder="" x:Name="entContraseña" Keyboard="Text" />
+            <Button Text="Iniciar Session" x:Name="btnLogin" Clicked="btnLogin_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
