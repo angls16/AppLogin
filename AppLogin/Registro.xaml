@@ -4,9 +4,9 @@
              x:Class="AppLogin.Registro">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Usuario conextado: " />
+            <Label Text="" x:Name="lblUsuario" FontSize="20" />
+            <Button Text="Guardar" x:Name="btnGuardar" Clicked="btnGuardar_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

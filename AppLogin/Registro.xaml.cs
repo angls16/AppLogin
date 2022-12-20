@@ -15,7 +15,12 @@ namespace AppLogin
         public Registro(string usuario, string contraseña)
         {
             InitializeComponent();
+            lblUsuario.Text = usuario;
         }
-        
+
+        private async void btnGuardar_Clicked(object sender, EventArgs e)
+        {
+           // await Navigation.PushAsync(new Resumen(lblUsuario.Text));
+        }
     }
 }
