@@ -17,10 +17,20 @@ namespace AppLogin
             InitializeComponent();
         }
 
-        private void btnLogin_Clicked(object sender, EventArgs e)
+        private async void btnLogin_Clicked(object sender, EventArgs e)
         {
             string usuario = entUsuario.Text;
             string contraseña = entContraseña.Text;
+            string Usuario = "angel2022";
+            string Contraseña = "itq2022";
+            if (usuario == Usuario && contraseña == Contraseña)
+            {
+                await Navigation.PushAsync(new Registro(usuario, contraseña));
+            }
+            else
+            {
+                DisplayAlert("ERROR", "Usuario o Contraseña incorrecta","gracias");
+            }
         }
     }
 }

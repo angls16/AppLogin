@@ -12,9 +12,10 @@ namespace AppLogin
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Registro : ContentPage
     {
-        public Registro()
+        public Registro(string usuario, string contraseña)
         {
             InitializeComponent();
         }
+        
     }
 }
