@@ -5,10 +5,18 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Image Source="" />
-            <Entry Placeholder="" x:Name="entUsuario" Keyboard="Text"/>
-            <Entry Placeholder="" x:Name="entContraseña" Keyboard="Text" />
-            <Button Text="Iniciar Session" x:Name="btnLogin" Clicked="btnLogin_Clicked" />
+            <Label TextColor="#3399ff" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" Text="Iniciar Sesión" FlexLayout.AlignSelf="Center"  FontSize="25" />
+            <Image Source="" HeightRequest="140" WidthRequest="140" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
+            <!--<Entry x:Name="userNameEntry" ReturnType="Next" Placeholder="Email" FontSize="Medium" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand"  TextColor="Black" />-->
+            <Entry Placeholder="Usuario" FontSize="Medium" TextColor="Black" x:Name="entUsuario" />
+
+            <!--<Entry x:Name="passwordEntry" ReturnType="Done" IsPassword="True" Placeholder="Password" FontSize="Medium" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand"  TextColor="Black" />-->
+            <Entry Placeholder="Contraseña" IsPassword="True"   x:Name="entContraseña" FontSize="Medium"  TextColor="Black" />
+
+            <!--<Button x:Name="login" Clicked="loging_Clicked" FontSize="Medium" TextColor="White" BorderColor="Black" BackgroundColor="#00b33c"  CornerRadius="5" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand" Text="Iniciar sesión"></Button>-->
+            <Button Text="Iniciar Sesión" FontSize="Medium" TextColor="White" BorderColor="Black" Background="#00b33c" CornerRadius="5"   x:Name="btnLogin" Clicked="btnLogin_Clicked" />
+
+
 
         </StackLayout>
     </ContentPage.Content>
