@@ -4,6 +4,9 @@
              x:Class="AppLogin.Registro">
     <ContentPage.Content>
         <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="0"  >
+                <Label Text="Registro" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
             <Label Text="Usuario conectado: " />
             <Label Text="" x:Name="lblUsuario" FontSize="20" />
             <Entry Placeholder="Nombre" x:Name="entNombre" Keyboard="Text"/>
